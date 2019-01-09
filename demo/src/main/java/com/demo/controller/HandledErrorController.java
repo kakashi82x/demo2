@@ -11,20 +11,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.demo.bean.Response;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class WelcomeController.
  */
 @Controller
 public class HandledErrorController {
 	
+	/** The response. */
 	@Autowired
 	private Response response;
 	
 	/**
 	 * Welcome.
 	 *
-	 * @param model the model
 	 * @return the string
 	 */
 	@RequestMapping( value = "/unauthoraized")
@@ -32,5 +31,17 @@ public class HandledErrorController {
 		this.response.setCode("1");
 		this.response.setDescription(HttpStatus.UNAUTHORIZED.getReasonPhrase());
 		return new ResponseEntity<Response>(this.response, HttpStatus.UNAUTHORIZED);
+	}
+	
+	/**
+	 * Badrequest.
+	 *
+	 * @return the response entity
+	 */
+	@RequestMapping( value = "/badrequest")
+	public ResponseEntity<Response> badrequest (){
+		this.response.setCode("1");
+		this.response.setDescription(HttpStatus.BAD_REQUEST.getReasonPhrase());
+		return new ResponseEntity<Response>(this.response, HttpStatus.BAD_REQUEST);
 	}
 }

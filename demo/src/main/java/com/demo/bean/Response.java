@@ -32,6 +32,7 @@ public class Response {
 	 * @param codes the new codes
 	 */
 	public void setCodes(String codes) {
+		System.err.print("conflicto 2");
 		this.codes = codes;
 	}
 	

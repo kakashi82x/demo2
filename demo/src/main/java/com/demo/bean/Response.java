@@ -11,28 +11,28 @@ import org.springframework.stereotype.Component;
 @Component("response")
 public class Response {
 	
-	/** The code. */
-	private String code;
+	/** The codes. */
+	private String codes;
 	
 	/** The description. */
 	private String description;
 	
 	/**
-	 * Gets the code.
+	 * Gets the codes.
 	 *
-	 * @return the code
+	 * @return the codes
 	 */
-	public String getCode() {
-		return code;
+	public String getCodes() {
+		return codes;
 	}
 	
 	/**
-	 * Sets the code.
+	 * Sets the codes.
 	 *
-	 * @param code the new code
+	 * @param codes the new codes
 	 */
-	public void setCode(String code) {
-		this.code = code;
+	public void setCodes(String codes) {
+		this.codes = codes;
 	}
 	
 	/**

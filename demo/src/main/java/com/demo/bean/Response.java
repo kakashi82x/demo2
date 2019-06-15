@@ -33,6 +33,7 @@ public class Response {
 	 */
 	public void setCodes(String codes) {
 		this.codes = codes;
+		System.err.print("conflicto 1");
 	}
 	
 	/**

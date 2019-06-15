@@ -34,6 +34,7 @@ public class Response {
 	public void setCodes(String codes) {
 		System.err.print("conflicto 2");
 		this.codes = codes;
+		System.err.print("conflicto 1");
 	}
 	
 	/**
